@@ -1,0 +1,21 @@
+import "../styles/globals.css";
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
+
+export const metadata = {
+  title: "Nordic IT Solutions (NITS)",
+  description:
+    "Digital marknadsföring som ger leads. Webb & design som konverterar. Svensk projektledning • Snabb leverans • Prisvärt",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="sv">
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
+}

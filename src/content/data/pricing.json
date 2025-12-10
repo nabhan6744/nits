@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Starter",
+    "price": "fr. 4 900 kr/mån",
+    "desc": "Små företag som vill komma igång snabbt",
+    "features": ["1 kanal (SEO eller Ads)", "Grundsetup + optimering", "Månadsrapport"],
+    "cta": "Boka call"
+  },
+  {
+    "name": "Growth",
+    "badge": "Mest populär",
+    "price": "fr. 9 900 kr/mån",
+    "desc": "Företag som vill växa stabilt",
+    "features": ["2 kanaler (t.ex. SEO + Ads)", "Veckovis optimering", "Copy + creatives"],
+    "cta": "Få offert"
+  },
+  {
+    "name": "Scale",
+    "price": "fr. 19 900 kr/mån",
+    "desc": "Bolag som vill dominera sin nisch",
+    "features": ["Multi-channel growth", "Landing pages + CRO", "Prioriterad support"],
+    "cta": "Prata med oss"
+  }
+]

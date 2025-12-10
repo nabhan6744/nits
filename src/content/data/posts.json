@@ -1,0 +1,33 @@
+[
+  {
+    "title": "SEO för småföretag: 7 snabba vinster",
+    "slug": "seo-for-smaforetag-7-snabba-vinster",
+    "excerpt": "Praktiska SEO-grejer du kan göra direkt för att få mer trafik och leads.",
+    "date": "2025-12-09",
+    "tags": ["SEO", "Content"],
+    "content": [
+      "Här är 7 snabba vinster du kan göra redan idag:",
+      "1) Fix-a titlar och metabeskrivningar på dina viktigaste sidor.",
+      "2) Gör en sida per tjänst (SEO, Google Ads, Meta Ads osv).",
+      "3) Lägg till FAQ på tjänstesidor (bra för både användare och sök).",
+      "4) Säkra att sidan laddar snabbt (bilder + caching).",
+      "5) Skriv 3–5 blogginlägg som matchar kundens frågor.",
+      "6) Se över internlänkar: länka från blogg → tjänst → kontakt.",
+      "7) Sätt upp Google Search Console så du ser vad som rankar."
+    ]
+  },
+  {
+    "title": "Google Ads: Så får du billigare leads",
+    "slug": "google-ads-sa-far-du-billigare-leads",
+    "excerpt": "Enkelt upplägg för sökannonser som sänker CPA och ökar kvaliteten på leads.",
+    "date": "2025-12-09",
+    "tags": ["Google Ads", "PPC"],
+    "content": [
+      "Målet är inte fler klick — det är bättre leads.",
+      "Börja med: tydliga kampanjer per tjänst + separata annonsgrupper per sökintention.",
+      "Använd negativa sökord varje vecka.",
+      "Ha en landningssida per erbjudande (inte startsidan).",
+      "Mät konverteringar korrekt (form submit / call / purchase)."
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+[
+  { "title": "SEO", "href": "/seo", "desc": "Teknisk SEO, content och länkar för långsiktig tillväxt." },
+  { "title": "Google Ads", "href": "/google-ads", "desc": "Sökannonser som ger leads snabbt och effektivt." },
+  { "title": "Meta Ads", "href": "/meta-ads", "desc": "Annonser på Facebook/Instagram med kreativa som konverterar." },
+  { "title": "Design", "href": "/design", "desc": "Logos, brand och social media creatives." },
+  { "title": "Webb", "href": "/web", "desc": "Landing pages, portfolio och e-commerce." }
+]
