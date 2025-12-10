@@ -1,26 +1,31 @@
 import Link from "next/link";
 
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
-    <footer>
-      <div className="container footerWrap">
+    <footer className="siteFooter">
+      <div className="container footerInner">
         <div className="footerLeft">
-          <div className="footerBrand">Nordic IT Solutions (NITS)</div>
-          <div className="footerMuted">
-            Svensk projektledning • Snabb leverans • Prisvärt
+          <div className="brand footerBrand">
+            <span>Nordic IT Solutions (NITS)</span>
           </div>
+          <div className="muted">Svensk projektledning • Snabb leverans • Prisvärt</div>
         </div>
 
-        <div className="footerLinks">
-          <Link href="/about">Om oss</Link>
-          <Link href="/process">Så jobbar vi</Link>
-          <Link href="/contact">Kontakt</Link>
-        </div>
+        <nav className="footerLinks" aria-label="Footer">
+          <Link className="navLink" href="/about">
+            Om oss
+          </Link>
+          <Link className="navLink" href="/process">
+            Så jobbar vi
+          </Link>
+          <Link className="navLink" href="/contact">
+            Kontakt
+          </Link>
+        </nav>
 
-        <div className="footerBottom">
-          © {new Date().getFullYear()} Nordic IT Solutions (NITS). All rights
-          reserved.
-        </div>
+        <div className="footerRight muted">© {year} Nordic IT Solutions (NITS). All rights reserved.</div>
       </div>
     </footer>
   );

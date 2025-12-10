@@ -29,8 +29,11 @@ export default function PricingPage() {
     <main>
       <section className="section">
         <div className="container">
-          <h1 className="h1">Priser</h1>
-          <p className="lead">Enkla paket som går att uppgradera när du växer. Inga krångliga upplägg.</p>
+          <div className="pill">Priser</div>
+          <h1 className="h1">Enkla paket. Tydlig leverans.</h1>
+          <p className="lead">
+            Välj ett paket och skala upp när du växer. Ads-budget ingår inte.
+          </p>
 
           <div className="grid3 mt">
             {plans.map((p) => (
@@ -53,22 +56,9 @@ export default function PricingPage() {
                   {p.primary ? "Få offert" : "Boka call"}
                 </Link>
 
-                <div className="hint">*Ads-budget ingår inte.</div>
+                <div className="hint mt2">*Vi anpassar efter bransch, mål och budget.</div>
               </div>
             ))}
-          </div>
-
-          <div className="card mt">
-            <div className="cardTitle">Vill du ha ett exakt pris?</div>
-            <p className="muted mt2">Säg mål + budget så får du ett tydligt förslag.</p>
-            <div className="row gap mt">
-              <Link className="btn primary" href="/contact">
-                Kontakta oss
-              </Link>
-              <Link className="btn" href="/services">
-                Se tjänster
-              </Link>
-            </div>
           </div>
         </div>
       </section>

@@ -1,30 +1,58 @@
+import Link from "next/link";
+
 export default function ProcessPage() {
   return (
-    <main className="mx-auto max-w-4xl px-4 py-14">
-      <h1 className="text-4xl font-semibold tracking-tight">Så jobbar vi</h1>
-      <p className="mt-3 text-slate-600">
-        Enkel process, tydlig leverans. Du har alltid en svensk kontakt för kommunikation och ansvar.
-      </p>
+    <main>
+      <section className="section">
+        <div className="container">
+          <div className="pill">Så jobbar vi</div>
 
-      <div className="mt-10 space-y-4">
-        {[
-          ["1) Behov & mål", "Vi förstår ditt erbjudande, målgrupp och vad som räknas som “resultat” för dig."],
-          ["2) Plan & scope", "Vi föreslår kanal(er), leveransplan, tidslinje och upplägg (projekt eller månadsvis)."],
-          ["3) Produktion", "Vi producerar creatives, texter, annonser, SEO-content eller webb — med QA innan leverans."],
-          ["4) Lansering & optimering", "Vi följer data, testar och förbättrar. Du får rapport som är lätt att förstå."]
-        ].map(([t, d]) => (
-          <div key={t} className="rounded-2xl border p-6">
-            <div className="font-semibold">{t}</div>
-            <p className="mt-2 text-sm text-slate-600">{d}</p>
+          <h1 className="h1">En enkel process. Tydlig leverans.</h1>
+
+          <p className="lead">
+            Du har en svensk kontakt hela vägen — vi tar ansvar för plan, produktion och kvalitet,
+            och visar resultat med tydlig rapportering.
+          </p>
+
+          <div className="grid2 mt">
+            {[
+              ["01", "Gratis mini-audit", "Vi tittar snabbt på din webb/annonsering och hittar största förbättringen först."],
+              ["02", "Plan + tydlig offert", "Du får en enkel plan, scope och fast pris eller månadsupplägg."],
+              ["03", "Produktion & lansering", "Vi producerar, kvalitetssäkrar och lanserar snabbt."],
+              ["04", "Optimering & rapport", "Vi förbättrar kontinuerligt och rapporterar så du ser effekten tydligt."],
+            ].map(([n, t, d]) => (
+              <div className="card" key={n}>
+                <div className="muted small">{n}</div>
+                <div className="cardTitle mt2">{t}</div>
+                <p className="muted">{d}</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
 
-      <div className="mt-8">
-        <a className="rounded-xl bg-black text-white px-5 py-3 text-sm font-medium inline-block" href="/contact">
-          Boka gratis 15 min
-        </a>
-      </div>
+          <div className="card mt">
+            <div className="between">
+              <div>
+                <div className="cardTitle">Redo att börja?</div>
+                <p className="muted">
+                  Boka en gratis 15 min call så tar vi fram ett enkelt förslag och nästa steg.
+                </p>
+              </div>
+              <Link className="btn primary" href="/contact">
+                Boka gratis 15 min
+              </Link>
+            </div>
+          </div>
+
+          <div className="row gap mt">
+            <Link className="btn" href="/services">
+              Se tjänster
+            </Link>
+            <Link className="btn" href="/pricing">
+              Se priser
+            </Link>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

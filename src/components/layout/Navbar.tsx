@@ -1,24 +1,33 @@
 import Link from "next/link";
 
 export default function Navbar() {
+  const links = [
+    { href: "/services", label: "Tjänster" },
+    { href: "/pricing", label: "Priser" },
+    { href: "/case-studies", label: "Case" },
+    { href: "/blog", label: "Blogg" },
+    { href: "/contact", label: "Kontakt" },
+  ];
+
   return (
-    <header>
-      <div className="container navWrap">
+    <header className="siteHeader">
+      <div className="container headerInner">
         <Link href="/" className="brand">
-          Nordic IT Solutions <span className="brandTag">(NITS)</span>
+          <span>Nordic IT Solutions</span>
+          <span className="brandTag">(NITS)</span>
         </Link>
 
-        <nav className="navLinks">
-          <Link href="/services">Tjänster</Link>
-          <Link href="/pricing">Priser</Link>
-          <Link href="/case-studies">Case</Link>
-          <Link href="/blog">Blogg</Link>
-          <Link href="/contact">Kontakt</Link>
+        <nav className="navLinks" aria-label="Huvudmeny">
+          {links.map((l) => (
+            <Link key={l.href} href={l.href} className="navLink">
+              {l.label}
+            </Link>
+          ))}
         </nav>
 
-        <div className="navRight">
-          <Link className="btn primary glowBtn" href="/contact">
-            Boka möte <span aria-hidden>→</span>
+        <div className="headerCta">
+          <Link className="btn primary" href="/contact">
+            Boka möte
           </Link>
         </div>
       </div>
