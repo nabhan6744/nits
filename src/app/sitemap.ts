@@ -1,8 +1,7 @@
 import type { MetadataRoute } from "next";
-import { env } from "@/lib/env";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = (env.SITE_URL || "http://localhost:3000").replace(/\/$/, "");
+  const base = (process.env.SITE_URL || "http://localhost:3000").replace(/\/$/, "");
 
   const routes = [
     "/",
@@ -16,13 +15,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/meta-ads",
     "/design",
     "/web",
+    "/about",
+    "/process",
   ];
-
-  const lastModified = new Date();
 
   return routes.map((r) => ({
     url: `${base}${r}`,
-    lastModified,
+    lastModified: new Date(),
     changeFrequency: "weekly",
     priority: r === "/" ? 1 : 0.7,
   }));
